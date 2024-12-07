@@ -1,0 +1,260 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container img {width: 90px;
+height: 90px;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    color: #333;
+    padding: 20px 0; 
+    height: 47px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+header a:hover {
+    color: #50b3a2; /* Cor de destaque no hover */
+    
+}
+header ul { 
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 10px 5px 20px;
+}
+header #branding {
+    float: left;
+}
+.icon-logo{
+    position: fixed;
+    top: 5px;
+    left: 100px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+section#main {
+    padding: 30px;
+    background: #fff;
+    
+}
+section#main img {
+    width: 100%;
+    height: auto;
+}
+.icon-logo{
+    width: 120px; 
+    height: 120px; 
+    vertical-align: middle;
+    margin-right: 16px;
+    background-color: transparent;
+    border: none;
+    display: inline-block; 
+    float: left; 
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+    text-align: center;
+} 
+
+
+.img1, .img2 {
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.img1 img, .img2 img {
+    width: 30%;
+    height: auto;
+    display: inline-block; /* Isso ajuda a centralizar a imagem corretamente */
+}
+
+section#dark {
+    padding: 30px;
+    background: #333;
+    color: #fff;
+}
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+.dark-mode {
+    background-color: #000;
+    background: linear-gradient(to bottom, #000, #000);
+    color: #fff;
+}
+.dark-mode header {
+    background: #222;
+    color: #fff;
+}
+.dark-mode section#main {
+    background: #000;;
+    color: #f1f1f1;
+}
+.dark-mode footer {
+    background: #222;
+    color: #fff;
+}
+.dark-mode a {
+    color: #50b3a2;
+}
+#toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+#toggle-button img {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#toggle-button:hover {
+    transform: scale(1.1); 
+
+}
+#toggle-button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #50b3a2;
+}
+
+button {
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 10px 20px; 
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+button:hover {
+    text-decoration: underline; 
+}
+
+.site-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-color: transparent;
+    border: none;
+}
+
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px; 
+}
+#nav-dropdown {
+    display: none;
+}
+
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+    }
+    #nav-dropdown {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header li {
+        padding: 10px 0;
+    }
+    
+    .icon-logo {
+       
+        width: 100px;
+        height: 100px;
+    }
+    
+    .img1 img, .img2 img {
+        width: 50%; /* Ajusta a largura das imagens nas telas menores */
+    }
+    
+    #toggle-button {
+        top: 20px;
+        right: 20px;
+    }
+    
+    footer {
+        font-size: 14px; /* Ajusta o tamanho da fonte no rodapé para telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    header ul {
+        font-size: 14px;
+    }
+
+    .img1 img, .img2 img {
+        width: 70%; /* Mais ajustes para telas ainda menores */
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
